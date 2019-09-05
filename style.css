@@ -19,7 +19,7 @@ nav{
 
 header{
     grid-area: header;
-    background-color: gray;
+    background-image: url(img/banner.png)
 }
 .one{
     grid-area: one;
