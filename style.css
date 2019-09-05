@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 'nav nav nav nav nav nav'
+                        'header header header header header header'
+                        'one one one one one one'
+                        'two two two two two two'
+                        'three three  three  three three three'
+                        'footer footer footer footer footer footer';
+    grid-template-columns: 16.7vw 16.7vw 16.3vw 16.3vw 16.3vw 16.3vw;
+    grid-template-rows: 1.5vh 85vh 40vh 50vh 70vh 22vh;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #2ecb70;
+ }
+
+header{
+    grid-area: header;
+    background-color: gray;
+}
+.one{
+    grid-area: one;
+    background-color: pink;
+}
+
+.two{
+    grid-area: two;
+    background-color: aquamarine;
+}
+.three{
+    grid-area: three;
+    background-color: red;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
