@@ -8,8 +8,8 @@ body{
                         'two two two two two two'
                         'three three  three  three three three'
                         'footer footer footer footer footer footer';
-    grid-template-columns: 16.7vw 16.7vw 16.3vw 16.3vw 16.3vw 16.3vw;
-    grid-template-rows: 1.5vh 85vh 40vh 50vh 70vh 22vh;
+    grid-template-columns: 16.4vw 16.4vw 16.4vw 16.5vw 16.5vw 16.5vw;
+    grid-template-rows: 1.5vh 85vh 45vh 55vh 70vh 22vh;
 }
 
 nav{
@@ -19,18 +19,35 @@ nav{
 
 header{
     grid-area: header;
-    background-image: url(img/banner.png)
+    background-image: url("img/banner.png");
 }
-.one{
+section.one{
     grid-area: one;
-    background-color: pink;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-.two{
-    grid-area: two;
-    background-color: aquamarine;
+.one img{
+    background-color: #2ecb70;
+    border: 10px solid #2ecb70;
+    border-radius: 50%;
 }
-.three{
+
+section.two{
+    grid-area: two;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+}
+
+.two div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+
+section.three{
     grid-area: three;
     background-color: red;
 }
