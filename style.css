@@ -21,6 +21,9 @@ header{
     grid-area: header;
     background-image: url("img/banner.png");
 }
+
+/* SECTION ICONES */
+
 section.one{
     grid-area: one;
     display: flex;
@@ -34,6 +37,8 @@ section.one{
     background-color: #2ecb70;
     border-radius: 50%;
 }
+
+/* SECTION VIDEO */
 
 section.two{
     grid-area: two;
@@ -56,14 +61,26 @@ section.two{
     border: none;
     border-radius: 0px 15px 15px 0px;
 }
-.two div:nth-child(2){
- 
+
+
+/* SECTION PERFIL */
+section.three{
+    grid-area: three;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.three .icons img{
+    background-color: #e3e3e3;
+    height: 35px;
+    border: 2px solid #e3e3e3;
+    border-radius: 20px;
 }
 
 
-
-section.three{
-    grid-area: three;
+   
 }
 
 footer{
