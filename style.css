@@ -9,7 +9,7 @@ body{
                         'three three  three  three three three'
                         'footer footer footer footer footer footer';
     grid-template-columns: 16.4vw 16.4vw 16.4vw 16.5vw 16.5vw 16.5vw;
-    grid-template-rows: 1.5vh 85vh 45vh 55vh 70vh 22vh;
+    grid-template-rows: 1.5vh 85vh 45vh 55vh 60vh 20vh;
 }
 
 nav{
@@ -74,16 +74,28 @@ section.three{
 
 .three .icons img{
     background-color: #e3e3e3;
-    height: 35px;
-    border: 2px solid #e3e3e3;
+    height: 20px;
+    border: 5px solid #e3e3e3;
     border-radius: 20px;
+    margin: 5px;
 }
 
-
-   
-}
 
 footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
     grid-area: footer;
-    background-color: black;
+    background-color: #e3e3e3;
 }
+
+.footer-menu{
+    width: 100%;
+}
+
+.footer-menu a{
+    margin: 8px;
+    color: gray;
+    text-decoration: none;
+}
+
