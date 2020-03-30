@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -10,6 +13,7 @@ body{
                         'footer footer footer footer footer footer';
     grid-template-columns: 16.4vw 16.4vw 16.4vw 16.5vw 16.5vw 16.5vw;
     grid-template-rows: 1.5vh 85vh 45vh 55vh 60vh 20vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
@@ -17,9 +21,39 @@ nav{
     background-color: #2ecb70;
  }
 
+ /* HEADER WITH IMAGES  */
 header{
+    display: flex;
     grid-area: header;
+    align-items: center;
     background-image: url("img/banner.png");
+}
+
+header div:nth-child(1){
+    width: 50%;
+    padding: 90px;
+    color: white;
+}
+
+header div:nth-child(2){
+    display: flex;
+    width: 50%;
+    padding-top: 52px;
+
+}
+
+.header-icons img{
+    background-color: black;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin: 4px;
+    opacity: 0.4;
+}
+
+.header-icons img:hover{
+    background-color: #2CBF60;
+    border: 10px solid #2CBF60;
+    opacity: 1;
 }
 
 /* SECTION ICONES */
@@ -72,14 +106,16 @@ section.three{
     text-align: center;
 }
 
+
 .three .icons img{
-    background-color: #e3e3e3;
-    height: 20px;
-    border: 5px solid #e3e3e3;
+    background-color: gray;
+    height: 23px;
+    border: 5px solid gray;
     border-radius: 20px;
     margin: 5px;
 }
 
+/* FOOTER */
 
 footer{
     display: flex;
@@ -99,3 +135,11 @@ footer{
     text-decoration: none;
 }
 
+/* COMMON THINGS */
+
+p{
+    color: gray;
+}
+.font-title{
+    font-family: 'Baloo Thambi 2', cursive;
+}
